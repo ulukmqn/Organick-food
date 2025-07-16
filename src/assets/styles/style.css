@@ -158,6 +158,69 @@ body {
 
 
 /* OFFER-BANNER */
+.banner > .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+}
+
+.container {
+    max-width: 1070px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.banner-fruits {
+    background: url('./images/fruits.svg') no-repeat center/cover;
+    width: 511px;
+    height: 275px;
+    border-radius: 22px;
+}
+
+.banner-fruits__wrapper {
+    max-width: 208px;
+    padding: 62px 262px 82px 42px;
+}
+
+.banner-fruits__title {
+    font-weight: 400;
+    font-size: 27px;
+    color: #fff;
+    margin-bottom: -30px;
+}
+
+.banner-fruits__desc {
+    font-weight: 800;
+    font-size: 30px;
+    color: #fff;
+}
+
+
+.banner-vegetables {
+    background: url('./images/fruits-2.svg') no-repeat center/cover;
+    width: 511px;
+    height: 275px;
+    border-radius: 22px;
+}
+
+.banner-vegetables__wrapper {
+    max-width: 208px;
+    padding: 62px 262px 82px 42px;
+}
+
+.banner-vegetables__title {
+    font-weight: 400;
+    font-size: 27px;
+    color: #7eb693;
+    margin-bottom: -30px;
+}
+
+.banner-vegetables__desc {
+    font-weight: 800;
+    font-size: 30px;
+    color: #274c5b;
+}
 
 /* OFFER-BANNER */
 
