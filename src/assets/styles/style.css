@@ -11,6 +11,30 @@ body {
     padding: 0 10px;
 }
 
+
+.yellow__btn {
+    border-radius: 12px;
+    padding: 21px 29px;
+    background: #efd372;
+    cursor: pointer;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 15px;
+    color: #274c5b;
+    margin-top: 17px;
+}
+.yellow__btn::after {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url("/src/assets/images/arrow-btn.svg");
+    background-size: cover;
+    margin-left: 7px;
+}
+
 /* HEDAER */
 .header {
     padding: 51px 0;
