@@ -2,7 +2,7 @@
 @import url("./resset.css");
 
 body {
-    /* font-family: "Yellowtail", "Open Sans", "Roboto", Arial, Helvetica, sans-serif; */
+    font-family: "Open Sans", "Roboto", Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -26,6 +26,30 @@ body {
     margin-top: 17px;
 }
 .yellow__btn::after {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url("/src/assets/images/arrow-btn.svg");
+    background-size: cover;
+    margin-left: 7px;
+}
+
+.blue__btn {
+    border-radius: 12px;
+    padding: 21px 29px;
+    background: #274c5b;
+    cursor: pointer;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 17px;
+}
+
+.blue__btn::after {
     content: '';
     display: inline-block;
     width: 15px;
@@ -158,7 +182,66 @@ body {
 
 
 /* OFFER-BANNER */
+.banner > .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+    padding: 115px 0 142px 0;
+}
 
+.container {
+    max-width: 1070px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.banner-fruits {
+    background: url('../images/fruits\ —\ копия.svg') no-repeat center/cover;
+    width: 511px;
+    height: 275px;
+    border-radius: 22px;
+}
+
+.banner-fruits__wrapper {
+    padding: 81px 262px 82px 42px;
+}
+
+.banner-fruits__title {
+    font-weight: 400;
+    font-size: 27px;
+    color: #fff;
+}
+
+.banner-fruits__desc {
+    font-weight: 800;
+    font-size: 30px;
+    color: #fff;
+}
+
+
+.banner-vegetables {
+    background: url('../images/fruits-2\ —\ копия.svg') no-repeat center/cover;
+    width: 511px;
+    height: 275px;
+    border-radius: 22px;
+}
+
+.banner-vegetables__wrapper {
+    padding: 82px 262px 82px 42px;
+}
+
+.banner-vegetables__title {
+    font-weight: 400;
+    font-size: 27px;
+    color: #7eb693;
+}
+
+.banner-vegetables__desc {
+    font-weight: 800;
+    font-size: 30px;
+    color: #274c5b;
+}
 /* OFFER-BANNER */
 
 
@@ -166,7 +249,56 @@ body {
 
 
 /* ABOUT */
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #F9F8F8;
+}
 
+.text-side {
+    max-width: 544px;
+    margin-left: -50px;
+}
+
+.about {
+    color: #7EB693;
+    font-weight: bold;
+    font-size: 37px;
+}
+
+.description {
+    margin: 20px 0;
+}
+
+.features {
+    margin: 20px 0;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 2px; 
+  margin-bottom: 8px;
+}
+
+.icon {
+  width: 75px;
+  height: 75px;
+}
+
+.text-block h3 {
+  margin: 0 0 4px 0; 
+  font-size: 18px;
+}
+
+.text-block p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 35px;
+}
 /* ABOUT */
 
 
