@@ -2,7 +2,7 @@
 @import url("./resset.css");
 
 body {
-    /* font-family: "Yellowtail", "Open Sans", "Roboto", Arial, Helvetica, sans-serif; */
+    font-family: "Open Sans", "Roboto", Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -26,6 +26,30 @@ body {
     margin-top: 17px;
 }
 .yellow__btn::after {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url("/src/assets/images/arrow-btn.svg");
+    background-size: cover;
+    margin-left: 7px;
+}
+
+.blue__btn {
+    border-radius: 12px;
+    padding: 21px 29px;
+    background: #274c5b;
+    cursor: pointer;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 17px;
+}
+
+.blue__btn::after {
     content: '';
     display: inline-block;
     width: 15px;
@@ -273,6 +297,7 @@ body {
   margin: 0;
   color: #666;
   font-size: 14px;
+  margin-bottom: 35px;
 }
 /* ABOUT */
 
