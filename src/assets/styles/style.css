@@ -158,7 +158,66 @@ body {
 
 
 /* OFFER-BANNER */
+.banner > .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+    padding: 115px 0 142px 0;
+}
 
+.container {
+    max-width: 1070px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.banner-fruits {
+    background: url('../images/fruits\ —\ копия.svg') no-repeat center/cover;
+    width: 511px;
+    height: 275px;
+    border-radius: 22px;
+}
+
+.banner-fruits__wrapper {
+    padding: 81px 262px 82px 42px;
+}
+
+.banner-fruits__title {
+    font-weight: 400;
+    font-size: 27px;
+    color: #fff;
+}
+
+.banner-fruits__desc {
+    font-weight: 800;
+    font-size: 30px;
+    color: #fff;
+}
+
+
+.banner-vegetables {
+    background: url('../images/fruits-2\ —\ копия.svg') no-repeat center/cover;
+    width: 511px;
+    height: 275px;
+    border-radius: 22px;
+}
+
+.banner-vegetables__wrapper {
+    padding: 82px 262px 82px 42px;
+}
+
+.banner-vegetables__title {
+    font-weight: 400;
+    font-size: 27px;
+    color: #7eb693;
+}
+
+.banner-vegetables__desc {
+    font-weight: 800;
+    font-size: 30px;
+    color: #274c5b;
+}
 /* OFFER-BANNER */
 
 
@@ -166,7 +225,55 @@ body {
 
 
 /* ABOUT */
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #F9F8F8;
+}
 
+.text-side {
+    max-width: 544px;
+    margin-left: -50px;
+}
+
+.about {
+    color: #7EB693;
+    font-weight: bold;
+    font-size: 37px;
+}
+
+.description {
+    margin: 20px 0;
+}
+
+.features {
+    margin: 20px 0;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 2px; 
+  margin-bottom: 8px;
+}
+
+.icon {
+  width: 75px;
+  height: 75px;
+}
+
+.text-block h3 {
+  margin: 0 0 4px 0; 
+  font-size: 18px;
+}
+
+.text-block p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
 /* ABOUT */
 
 
@@ -185,7 +292,7 @@ body {
 .products__subtitle {
   font-size: 20px;
   color: #79b98b;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   font-style: italic;
 }
 
@@ -316,6 +423,92 @@ body {
 
 /* --------------------------- */
 
+/* TESTIOMONIAL */
+
+.testimonial {
+  width: 1440px;
+  height: 950px;
+  margin: 40px auto;
+  padding: 0 15px;
+  background: url("/src/assets/images/Background.png") #f1eff0 no-repeat center/cover;
+  width: 100%;
+}
+
+.testimonial__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 123px;
+}
+
+.testimonial__subtitle{
+font-weight: 400;
+font-size: 27px;
+color: #7eb693;
+text-align: center;
+font-family: "Yellowtail", sans-serif;
+}
+
+.testimonial__title{
+font-weight: 800;
+font-size: 37px;
+text-align: center;
+color: #274c5b;
+  font-family: "Roboto",sans-serif;
+}
+
+  .testimonial__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .testimonial__avatars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 46px;
+    padding-top: 50px;
+  }
+
+
+.testimonial__text{
+  font-family: "Open Sans",sans-serif;
+font-weight: 400;
+font-size: 14px;
+line-height: 165%;
+text-align: center;
+color: #525c60;
+padding-top: 18px;
+}
+
+.Consumer{
+  padding: 0;
+  padding-bottom: 14px;
+}
+
+.testimonial__name{
+font-weight: 600;
+font-size: 18px;
+color: #274c5b;
+}
+
+.testimonial__image{
+padding-top: 45px;
+padding-bottom: 15px;
+}
+
+.testimonial__info{
+  padding-top: 37px;
+}
+
+.testimonial__dots{
+  margin: 0 auto;
+  display: flex;
+}
+
+/* TESTIOMONIAL */
 
 /* offer */
 
@@ -324,7 +517,7 @@ body {
   max-width: 1200px;
   margin: 40px auto;
   padding: 0 15px;
-height: 787px;
+  height: 787px;
 }
 
 .content_offers {
@@ -332,10 +525,13 @@ height: 787px;
   padding-top: 150px;
   
 }
+.offer__header {
+  position: relative;
+}
+
 
 .offer__subtitle {
   font-size: 20px;
-  margin-bottom: 6px;
   font-weight: 400;
   font-size: 27px;
   color: #7eb693;
@@ -343,11 +539,9 @@ height: 787px;
 }
 
 .offer__title {
-  margin-bottom: 37px;
   font-weight: 800;
   font-size: 37px;
   color: #fff;
-  
 }
 
 .offer__grid {
@@ -355,6 +549,18 @@ height: 787px;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 15px;
 }
+
+.offer__header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 37px;
+}
+
+.offer__title {
+  margin: 0;
+}
+
 
 .offer__item {
   border-radius: 22px;
