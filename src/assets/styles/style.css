@@ -449,20 +449,29 @@ body {
 /* --------------------------- */
 
 
-/* offer */
+/* TESTIMONIAL */
+
+
+/* TESTIMONIAL */
+
+
+
+/* --------------------------- */
+
+
+/* OFFER */
 
 
 .offer {
   max-width: 1200px;
   margin: 40px auto;
   padding: 0 15px;
-height: 787px;
+  height: 787px;
 }
 
 .content_offers {
   background: #274C5B;
   padding-top: 150px;
-  
 }
 
 .offer__subtitle {
@@ -479,7 +488,6 @@ height: 787px;
   font-weight: 800;
   font-size: 37px;
   color: #fff;
-  
 }
 
 .offer__grid {
@@ -598,7 +606,60 @@ height: 787px;
 }
 
 
-/* offer */
+/* OFFER */
+
+
+/* --------------------------- */
+
+
+/* WO-WE-ARE */
+.wo-we-are {
+  margin-top: -40px;
+  display: flex;
+  align-items: center;
+}
+
+.wo-we-are__content {
+  position: relative;
+  right: 75px;
+  border-radius: 22px;
+  background-color: #ffffff;
+  padding: 60px 67px;
+  width: 592px;
+  height: 542px;
+}
+
+.wo-we-are__content__title {
+  font-weight: 400;
+  font-size: 27px;
+  color: #7eb693;
+}
+
+.wo-we-are__content__subtitle {
+  font-weight: 800;
+  font-size: 37px;
+  color: #274c5b;
+  margin-top: 6px;
+}
+
+.wo-we-are__content__wrapper__title {
+  font-weight: 500;
+  font-size: 18px;
+  color: #274c5b;
+}
+
+.wo-we-are__content__wrapper__subtitle {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 165%;
+  color: #525c60;
+  margin-top: 5px;
+}
+
+.wo-we-are__content__wrapper {
+  margin-top: 26px;
+}
+/* WO-WE-ARE */
 
 
 /* --------------------------- */
