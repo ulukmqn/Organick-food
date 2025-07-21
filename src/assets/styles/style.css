@@ -666,10 +666,236 @@ body {
 
 
 /* NEWSLETTER */
+.newsletter {
+    background: url('./img/image_8.png') center/cover no-repeat;
+    border-radius: 20px;
+    margin: 40px auto;
+    max-width: 1050px;
+    padding: 79px 53px;
+    text-align: left;
+    color: white;
+}
+
+.newsletter-content {
+    display: flex;
+    align-items: center;
+    gap: 244px;
+}
+
+.newsletter h2 {
+    font-weight: 800;
+    font-size: 37px;
+    color: #fff;
+    margin: 0;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    border: none;
+    border-radius: 5px;
+    width: 261px;
+    height: 60px;
+    font-size: 16px;
+    padding: 0 15px;
+    outline: none;
+}
+
+.newsletter-form button {
+    background-color: #274c5b;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 0 35px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
 
 /* NEWSLETTER */
 
 
 /* FOOTER */
+.footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 60px 80px;
+    background-color: #f9f8f8;
+    color: #274c5b;
+}
+
+.footer-contact,
+.footer-center,
+.footer-pages {
+  flex: 1;
+  position: relative;
+  padding: 0 40px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    font-size: 13px;
+    line-height: 165%;
+    text-align: right;
+}
+
+/* Контакты */
+.footer-contact {
+    flex: 1;
+    padding-right: 40px;
+    position: relative;
+}
+
+.footer-contact::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 1px;
+    background-color: #E0E0E0;
+}
+
+.footer-contact h3 {
+    font-size: 25px;
+    margin-bottom: 25px;
+    color: #274C5B;
+}
+
+.contact-item {
+    margin-bottom: 25px;
+}
+
+.contact-item strong {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #274C5B;
+}
+
+.contact-item p {
+    margin: 0;
+    font-size: 16px;
+    color: #525C60;
+}
+
+/* Центральная колонка */
+
+.footer-center {
+    flex: 1;
+    padding: 0 40px; 
+    text-align: center;
+    position: relative;*/
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-center::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 1px;
+    background-color: #E0E0E0;
+}
+
+.footer-logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer-center p {
+    line-height: 165%;
+    max-width: 407px;
+    margin: 0 auto 30px;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #525C60;
+    gap: 40px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+
+
+/* Полезные страницы */
+.footer-pages {
+  text-align: left;
+  padding-right: 0;
+}
+
+.footer-pages {
+    flex: 1;
+    padding-left: 40px;
+    font-size: 13px;
+    line-height: 273%;
+    color: #525c60;
+    text-align:left ;
+}
+
+.footer-pages h3 {
+    font-size: 25px;
+    margin-bottom: 25px;
+    color: #274C5B;
+}
+
+.footer-pages ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-pages li {
+    margin-bottom: 15px;
+}
+
+.footer-pages a {
+    color: #525C60;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.footer-pages a:hover {
+    color: #274C5B;
+    text-decoration: underline;
+}
+
+/* Копирайт */
+.copyright {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid #E0E0E0;
+    font-size: 16px;
+    color: #525C60;
+}
+
+.copyright strong {
+    font-weight: bold;
+    color: #274C5B;
+}
+
 
 /* FOOTER */
