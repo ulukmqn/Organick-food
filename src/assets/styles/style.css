@@ -855,7 +855,7 @@ body {
 
 /* NEWSLETTER */
 .newsletter {
-    background: url('../images/image_8.png') center/cover no-repeat;
+    background: url('./img/image_8.png') center/cover no-repeat;
     border-radius: 20px;
     margin: 40px auto;
     max-width: 1050px;
@@ -909,7 +909,6 @@ body {
   background-color: #1D3742;
 }
 
-
 /* NEWSLETTER */
 
 
@@ -922,7 +921,6 @@ body {
     margin: 0 auto;
     padding: 60px 80px;
     background-color: #fff;
-    color: #274c5b;
 }
 
 .footer-contact,
