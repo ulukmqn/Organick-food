@@ -317,7 +317,7 @@ body {
 .products__subtitle {
   font-size: 20px;
   color: #79b98b;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   font-style: italic;
 }
 
@@ -405,8 +405,9 @@ body {
   color: #b8b8b8;
   text-align: left;
   padding-left: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 14px;
   position: relative;
+  display: flex;
 }
 
 .product__price del {
@@ -442,12 +443,103 @@ body {
   background-color: #e0e0e0; 
 }
 
+.products__nav{
+  margin-top: 91px;
+  margin-bottom: 141px;
+}
+
 
 /* PRODUCTS */
 
 
 /* --------------------------- */
 
+/* TESTIOMONIAL */
+
+.testimonial {
+  width: 1440px;
+  height: 950px;
+  margin: 0 auto;
+  padding: 0 15px;
+  background: url("/src/assets/images/Background.png") #f1eff0 no-repeat center/cover;
+  width: 100%;
+}
+
+.testimonial__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 123px;
+}
+
+.testimonial__subtitle{
+font-weight: 400;
+font-size: 27px;
+color: #7eb693;
+text-align: center;
+font-family: "Yellowtail", sans-serif;
+}
+
+.testimonial__title{
+font-weight: 800;
+font-size: 37px;
+text-align: center;
+color: #274c5b;
+  font-family: "Roboto",sans-serif;
+}
+
+  .testimonial__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .testimonial__avatars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 46px;
+    padding-top: 50px;
+  }
+
+
+.testimonial__text{
+  font-family: "Open Sans",sans-serif;
+font-weight: 400;
+font-size: 14px;
+line-height: 165%;
+text-align: center;
+color: #525c60;
+padding-top: 18px;
+}
+
+.Consumer{
+  padding: 0;
+  padding-bottom: 14px;
+}
+
+.testimonial__name{
+font-weight: 600;
+font-size: 18px;
+color: #274c5b;
+}
+
+.testimonial__image{
+padding-top: 45px;
+padding-bottom: 15px;
+}
+
+.testimonial__info{
+  padding-top: 37px;
+}
+
+.testimonial__dots{
+  margin: 0 auto;
+  display: flex;
+}
+
+/* TESTIOMONIAL */
 
 /* TESTIMONIAL */
 
@@ -473,10 +565,13 @@ body {
   background: #274C5B;
   padding-top: 150px;
 }
+.offer__header {
+  position: relative;
+}
+
 
 .offer__subtitle {
   font-size: 20px;
-  margin-bottom: 6px;
   font-weight: 400;
   font-size: 27px;
   color: #7eb693;
@@ -484,7 +579,6 @@ body {
 }
 
 .offer__title {
-  margin-bottom: 37px;
   font-weight: 800;
   font-size: 37px;
   color: #fff;
@@ -495,6 +589,18 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 15px;
 }
+
+.offer__header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 37px;
+}
+
+.offer__title {
+  margin: 0;
+}
+
 
 .offer__item {
   border-radius: 22px;
@@ -565,12 +671,12 @@ body {
   margin: 0px 0 0 0;
   font-weight: 600;
   font-size: 11px;
-  text-align: center;
   color: #b8b8b8;
   text-align: left;
   padding-left: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 14px;
   position: relative;
+  display: flex;
 }
 
 .offer__price del {
@@ -603,6 +709,24 @@ body {
   width: calc(100% - 40px);
   height: 1px;
   background-color: #e0e0e0;
+}
+
+
+.offer__rating {
+  padding-right: 20px;
+  padding-bottom: 20px;
+  text-align: end;
+}
+
+.offer__rating img {
+  width: auto;
+  width: 62px;
+  height: 14px;
+}
+
+.star{
+  text-align: end;
+  padding-left: 60px;  
 }
 
 
@@ -666,6 +790,69 @@ body {
 
 
 /* GALLERY */
+.gallery {
+  background: #f1f8f4;
+  padding: 60px 0;
+}
+
+.gallery__container {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.gallery__grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 0;
+}
+
+.gallery__item {
+  position: relative;
+  width: 33.333%;
+  height: 437px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.Organic__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+  padding: 0 31px 0 0;
+}
+
+.Organic__image{
+  padding: 0;
+}
+
+.gallery__btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  padding: 24px 62px 25px 62px;
+  width: 240px;
+  height: 72px;
+  background: #fff;
+  border: 1px solid #274c5b;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #274c5b;
+  z-index: 2;
+}
+
+.gallery__btn:hover {
+  background: #274c5b;
+  color: #fff;
+}
+
 
 /* GALLERY */
 
