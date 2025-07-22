@@ -5,6 +5,9 @@ body {
     /* font-family: Arial, Helvetica, sans-serif; */
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 .container {
     max-width: 1070px;
@@ -289,7 +292,6 @@ body {
 
 .text-side {
     max-width: 500px;
-    /* margin-left: -50px; */
 }
 
 .text-side h1 {
@@ -636,12 +638,6 @@ padding-bottom: 15px;
 
 /* TESTIOMONIAL */
 
-/* TESTIMONIAL */
-
-
-/* TESTIMONIAL */
-
-
 
 /* --------------------------- */
 
@@ -650,15 +646,13 @@ padding-bottom: 15px;
 
 
 .offer {
-  max-width: 1200px;
+  max-width: 1085px;
   margin: 40px auto;
-  padding: 0 15px;
-  height: 787px;
+  padding: 150px 0;
 }
 
 .content_offers {
   background: #274C5B;
-  padding-top: 150px;
 }
 .offer__header {
   position: relative;
@@ -1101,7 +1095,7 @@ padding-bottom: 15px;
 
 /* NEWSLETTER */
 .newsletter {
-    background: url('./img/image_8.png') center/cover no-repeat;
+    background: url('../images/image_8.png') center/cover no-repeat;
     border-radius: 20px;
     margin: 40px auto;
     max-width: 1050px;
@@ -1335,12 +1329,16 @@ padding-bottom: 15px;
     color: #274C5B;
     text-decoration: underline;
 }
+/* FOOTER */
 
 
+/* ------------------------- */
+
+
+/* COPYRIGHT */
 .copyright {
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
-    text-align: center;
-    padding: 12px 457px 12px 457px;
+    padding: 12px 457px;
     border-top: 1px solid #E0E0E0;
     font-size: 13px;
     color: #525C60;
@@ -1350,6 +1348,4 @@ padding-bottom: 15px;
     font-weight: bold;
     color: #274C5B;
 }
-
-
-/* FOOTER */
+/* COPYRIGHT */

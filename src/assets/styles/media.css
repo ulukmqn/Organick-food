@@ -1,0 +1,113 @@
+@media (max-width: 1200px) {
+    .header__container {
+        max-width: 1016px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+    
+    .products {
+        max-width: 1116px;
+    }
+
+    .offer {
+        max-width: 1116px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 916px;
+    }
+
+    .banner-fruits__desc,
+    .banner-vegetables__desc {
+        font-size: 23px;
+    }
+    
+    .header__container {
+        max-width: 1016px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+    .header__link {
+        font-size: 12px;
+    }
+
+    .bottom__left__img,
+    .bottom__right__img {
+        width: 407px;
+        height: 293px;
+        padding: 32px 422px 299px 24px;
+    }
+
+    .bottom__left__desc {
+        width: 359px;
+        height: 248px;
+    }
+
+    .about-us {
+        flex-wrap: wrap;
+    }
+
+    .products {
+        max-width: 916px;
+    }
+
+    .offer {
+        max-width: 916px;
+    }
+
+    .wo-we-are__img {
+        width: 600px;
+    }
+
+    .wo-we-are__content {
+        width: 492px;
+        height: 442px;
+        padding: 50px 57px;
+    }
+
+    .wo-we-are__content__subtitle {
+        font-size: 27px;
+    }
+
+    .wo-we-are__content__wrapper__title {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    .wo-we-are__content__wrapper__subtitle {
+        font-size: 12px;
+    }
+
+    .wo-we-are__content__wrapper {
+        margin: 0;
+    }
+
+    .newsletter {
+        max-width: 916px;
+    }
+
+    .copyright {
+        padding: 12px 240px;
+    }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 600px) {
+
+}
+
+@media (max-width: 560px) {
+
+}
+
+@media (max-width: 440px) {
+
+}
+
+@media (max-width: 390px) {
+
+}
