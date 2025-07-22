@@ -667,7 +667,7 @@ body {
 
 /* NEWSLETTER */
 .newsletter {
-    background: url('./img/image_8.png') center/cover no-repeat;
+    background: url('../images/image_8.png') center/cover no-repeat;
     border-radius: 20px;
     margin: 40px auto;
     max-width: 1050px;
