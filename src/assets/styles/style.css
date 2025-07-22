@@ -5,6 +5,7 @@ body {
     /* font-family: Arial, Helvetica, sans-serif; */
 }
 
+
 .container {
     max-width: 1070px;
     margin: 0 auto;
@@ -80,8 +81,11 @@ body {
 }
 /* HEDAER */
 .header {
-    padding: 51px 0;
-    background: rgba(255, 255, 255, 0.9);
+    padding: 31px 0;
+    background: #e8e8e8;
+    position: sticky;
+    top: 0;
+    z-index: 999999;
 }
 
 .header__container {
@@ -106,6 +110,13 @@ body {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 14px;
+    color: #274c5b;
+    transition: .3s;
+}
+.header__link:hover {
+    color: #2E6F65;
+}
+.header__link:active {
     color: #274c5b;
 }
 
@@ -135,11 +146,7 @@ body {
     outline: none;
     width: 281px;
     margin-left: 8px;
-    background-color: #fafafa;;
-
-    /* background-image: url("/search-icon.svg");
-    background-repeat: no-repeat;
-    background-position: right 4px center; */
+    background-color: #fafafa;
 }
 
 .header__cart {
@@ -172,7 +179,7 @@ body {
 
 /* HERO */
 .hero {
-    height: calc(100vh - 154px);
+    height: calc(100vh - 114px);
     background: url("/src/assets/images/background-hero.jpg") #f1eff0 no-repeat center/cover;
 }
 
@@ -281,8 +288,8 @@ body {
 }
 
 .text-side {
-    max-width: 544px;
-    margin-left: -50px;
+    max-width: 500px;
+    /* margin-left: -50px; */
 }
 
 .text-side h1 {
@@ -309,14 +316,16 @@ body {
 }
 
 .features {
-    margin: 20px 0;
+    /* margin: 20px 0; */
 }
 
 .feature {
   display: flex;
-  align-items: center;
-  gap: 2px; 
-  margin-bottom: 8px;
+}
+
+.feature__two {
+  display: flex;
+  margin-top: -30px;
 }
 
 .icon {
@@ -325,18 +334,21 @@ body {
 }
 
 .text-block {
-  margin: 33px 0 2px 14px;
+  margin: 2px 0 2px 15px;
 }
 
-.text-block h3 {
+.text-block__two {
+  margin: 40px 0 2px 15px;
+}
+
+.text-block__title {
   margin: 0 0 4px 0; 
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: 800;
   font-size: 18px;
   color: #274c5b;
 }
-
-.text-block p {
+.text-block__subtitle {
   margin: 0;
   color: #666;
   margin-bottom: 35px;
@@ -357,21 +369,24 @@ body {
 .products {
   max-width: 1200px;
   margin: 40px auto;
-  padding: 0 15px;
+  padding-top: 132px;
   text-align: center;
 }
 
 .products__subtitle {
-  font-size: 20px;
-  color: #79b98b;
-  margin-bottom: 8px;
-  font-style: italic;
+  font-family: "Yellowtail", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 27px;
+  color: #7eb693;
+  margin-bottom: 6px;
 }
 
 .products__title {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 36px;
   margin-bottom: 40px;
-  font-weight: 700;
+  font-weight: 800;
+  color: #274c5b;
 }
 
 .products__grid {
@@ -408,22 +423,47 @@ body {
 
 .product__badge--vegetable {
   background-color: #274C5B;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
 }
 
 .product__badge--fresh {
   background-color: #274C5B;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
 }
 
 .product__badge--millets {
   background-color: #274C5B;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
 }
 
 .product__badge--health {
   background-color: #274C5B;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
 }
 
 .product__badge--nuts {
   background-color: #274C5B;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
 }
 
 .product__image {
@@ -436,6 +476,7 @@ body {
 }
 
 .product__name {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   margin: 10px 0;
   font-weight: 600;
   font-size: 15px;
@@ -444,6 +485,7 @@ body {
 }
 
 .product__price {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 15px;
   margin: 0px 0 0 0;
   font-weight: 600;
@@ -452,8 +494,9 @@ body {
   color: #b8b8b8;
   text-align: left;
   padding-left: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 14px;
   position: relative;
+  display: flex;
 }
 
 .product__price del {
@@ -489,12 +532,109 @@ body {
   background-color: #e0e0e0; 
 }
 
+.products__nav{
+  margin-top: 91px;
+  margin-bottom: 141px;
+}
+
 
 /* PRODUCTS */
 
 
 /* --------------------------- */
 
+/* TESTIOMONIAL */
+
+.testimonial {
+  width: 1440px;
+  height: 950px;
+  margin: 0 auto;
+  padding: 0 15px;
+  background: url("/src/assets/images/Background.png") #f1eff0 no-repeat center/cover;
+  width: 100%;
+}
+
+.testimonial__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 123px;
+}
+
+.testimonial__subtitle{
+  font-family: "Yellowtail", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 27px;
+  color: #7eb693;
+  text-align: center;
+}
+
+.testimonial__title{
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 37px;
+  text-align: center;
+  color: #274c5b;
+}
+
+  .testimonial__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .testimonial__avatars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 46px;
+    padding-top: 50px;
+  }
+
+
+.testimonial__text{
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 165%;
+  text-align: center;
+  color: #525c60;
+  padding-top: 18px;
+}
+
+.consumer{
+  padding: 0;
+  padding-bottom: 14px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 165%;
+  color: #525c60;
+}
+
+.testimonial__name{
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+font-weight: 600;
+font-size: 18px;
+color: #274c5b;
+}
+
+.testimonial__image{
+padding-top: 45px;
+padding-bottom: 15px;
+}
+
+.testimonial__info{
+  padding-top: 37px;
+}
+
+.testimonial__dots{
+  margin: 0 auto;
+  display: flex;
+}
+
+/* TESTIOMONIAL */
 
 /* TESTIMONIAL */
 
@@ -520,18 +660,21 @@ body {
   background: #274C5B;
   padding-top: 150px;
 }
+.offer__header {
+  position: relative;
+}
+
 
 .offer__subtitle {
+  font-family: "Yellowtail", Arial, Helvetica, sans-serif;
   font-size: 20px;
-  margin-bottom: 6px;
   font-weight: 400;
   font-size: 27px;
   color: #7eb693;
-  font-style: italic;
 }
 
 .offer__title {
-  margin-bottom: 37px;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: 800;
   font-size: 37px;
   color: #fff;
@@ -542,6 +685,18 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 15px;
 }
+
+.offer__header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 37px;
+}
+
+.offer__title {
+  margin: 0;
+}
+
 
 .offer__item {
   border-radius: 22px;
@@ -556,6 +711,7 @@ body {
 }
 
 .offer__badge {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   position: absolute;
   top: 16px;
   left: 16px;
@@ -608,16 +764,17 @@ body {
 }
 
 .offer__price {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 15px;
   margin: 0px 0 0 0;
   font-weight: 600;
   font-size: 11px;
-  text-align: center;
   color: #b8b8b8;
   text-align: left;
   padding-left: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 14px;
   position: relative;
+  display: flex;
 }
 
 .offer__price del {
@@ -653,6 +810,24 @@ body {
 }
 
 
+.offer__rating {
+  padding-right: 20px;
+  padding-bottom: 20px;
+  text-align: end;
+}
+
+.offer__rating img {
+  width: auto;
+  width: 62px;
+  height: 14px;
+}
+
+.star{
+  text-align: end;
+  padding-left: 60px;  
+}
+
+
 /* OFFER */
 
 
@@ -677,12 +852,14 @@ body {
 }
 
 .wo-we-are__content__title {
+  font-family: "Yellowtail", Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 27px;
   color: #7eb693;
 }
 
 .wo-we-are__content__subtitle {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: 800;
   font-size: 37px;
   color: #274c5b;
@@ -690,12 +867,14 @@ body {
 }
 
 .wo-we-are__content__wrapper__title {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 18px;
   color: #274c5b;
 }
 
 .wo-we-are__content__wrapper__subtitle {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 165%;
@@ -713,6 +892,68 @@ body {
 
 
 /* GALLERY */
+.gallery {
+  background: #f1f8f4;
+  padding: 60px 0;
+}
+
+.gallery__container {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.gallery__grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 0;
+}
+
+.gallery__item {
+  position: relative;
+  width: 33.333%;
+  height: 437px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.Organic__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+  padding: 0 31px 0 0;
+}
+
+.Organic__image{
+  padding: 0;
+}
+
+.gallery__btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  padding: 24px 62px 25px 62px;
+  width: 240px;
+  height: 72px;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #274c5b;
+  z-index: 2;
+}
+
+.gallery__btn:hover {
+  background: #274c5b;
+  color: #fff;
+}
+
 
 /* GALLERY */
 
@@ -736,18 +977,21 @@ body {
 }
 
 .news__top__title {
+  font-family: "Yellowtail", Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 27px;
   color: #7eb693;
 }
 
 .news__top__subtitle {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: 800;
   font-size: 37px;
   color: #274c5b;
 }
 
 .news__top__btn {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   position: relative;
   border: 1.50px solid #274c5b;
   border-radius: 12px;
@@ -817,6 +1061,7 @@ body {
 }
 
 .bottom__left__admin {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   position: relative;
   display: inline-flex;
   font-weight: 400;
@@ -831,17 +1076,18 @@ body {
   width: 15px;
   height: 16px;
   background-size: cover;
-  margin-top: 2px;
   margin-right: 6px;
 }
 
 .bottom__left__title {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: 800;
   font-size: 18px;
   color: #274c5b;
 }
 
 .bottom__left__subtitle {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 165%;
@@ -872,6 +1118,8 @@ body {
 }
 
 .newsletter h2 {
+    max-width: 267px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-weight: 800;
     font-size: 37px;
     color: #fff;
@@ -888,12 +1136,17 @@ body {
     border-radius: 12px;
     width: 261px;
     height: 60px;
-    font-size: 16px;
     padding: 0 15px;
     outline: none;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 13px;
+    color: #ababab;
 }
 
 .newsletter-form button {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     background-color: #274c5b;
     color: #fff;
     border: none;
@@ -901,8 +1154,10 @@ body {
     padding: 0 35px;
     height: 60px;
     cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+    transition: .3s;
 }
 
 .newsletter-form button:hover {
@@ -919,7 +1174,7 @@ body {
 .footer {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 60px 80px;
+    padding: 88px 0px;
     background-color: #fff;
 }
 
@@ -929,6 +1184,7 @@ body {
   flex: 1;
   position: relative;
   padding: 0 40px;
+
 }
 
 .footer-columns {
@@ -961,6 +1217,7 @@ body {
     font-size: 25px;
     margin-bottom: 25px;
     color: #274C5B;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 .contact-item {
@@ -968,19 +1225,20 @@ body {
 }
 
 .contact-item strong {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    color: #525c60;
     display: block;
     font-size: 18px;
     margin-bottom: 5px;
-    color: #274C5B;
 }
 
 .contact-item p {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 400;
     margin: 0;
     font-size: 16px;
     color: #525C60;
 }
-
-/* Центральная колонка */
 
 .footer-center {
     flex: 1;
@@ -1005,10 +1263,11 @@ body {
 }
 
 .footer-center p {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
     line-height: 165%;
     max-width: 407px;
     margin: 0 auto 30px;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1.6;
     color: #525C60;
     gap: 40px;
@@ -1031,7 +1290,6 @@ body {
 }
 
 
-/* Полезные страницы */
 .footer-pages {
   text-align: left;
   padding-right: 0;
@@ -1047,9 +1305,11 @@ body {
 }
 
 .footer-pages h3 {
-    font-size: 25px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #274c5b;
     margin-bottom: 25px;
-    color: #274C5B;
 }
 
 .footer-pages ul {
@@ -1063,6 +1323,8 @@ body {
 }
 
 .footer-pages a {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 400;
     color: #525C60;
     text-decoration: none;
     font-size: 16px;
@@ -1074,12 +1336,13 @@ body {
     text-decoration: underline;
 }
 
-/* Копирайт */
+
 .copyright {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
     text-align: center;
-    padding-top: 30px;
+    padding: 12px 457px 12px 457px;
     border-top: 1px solid #E0E0E0;
-    font-size: 16px;
+    font-size: 13px;
     color: #525C60;
 }
 
