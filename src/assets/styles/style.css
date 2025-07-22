@@ -2,7 +2,7 @@
 @import url("./resset.css");
 
 body {
-    font-family: "Open Sans", "Roboto", Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 .container {
@@ -15,15 +15,17 @@ body {
 .yellow__btn {
     border-radius: 12px;
     padding: 21px 29px;
-    background: #efd372;
+    background-color: #efd372;
     cursor: pointer;
     position: relative;
     display: inline-flex;
     align-items: center;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 15px;
     color: #274c5b;
     margin-top: 17px;
+    transition: .3s;
 }
 .yellow__btn::after {
     content: '';
@@ -34,6 +36,14 @@ body {
     background-size: cover;
     margin-left: 7px;
 }
+.yellow__btn:hover {
+  background-color: #274C5B;
+  color: #fff;
+}
+.yellow__btn:active {
+  background-color: #efd372;
+  color: #274c5b;
+}
 
 .blue__btn {
     border-radius: 12px;
@@ -43,10 +53,12 @@ body {
     position: relative;
     display: inline-flex;
     align-items: center;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 15px;
     color: #fff;
     margin-top: 17px;
+    transition: .3s;
 }
 
 .blue__btn::after {
@@ -58,7 +70,14 @@ body {
     background-size: cover;
     margin-left: 7px;
 }
-
+.blue__btn:hover {
+  background-color: #efd372;
+  color: #274c5b;
+}
+.blue__btn:active {
+  background-color: #274c5b;
+  color: #fff;
+}
 /* HEDAER */
 .header {
     padding: 51px 0;
@@ -208,12 +227,14 @@ body {
 }
 
 .banner-fruits__title {
+    font-family: "Yellowtail", Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 27px;
     color: #fff;
 }
 
 .banner-fruits__desc {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-weight: 800;
     font-size: 30px;
     color: #fff;
@@ -228,16 +249,18 @@ body {
 }
 
 .banner-vegetables__wrapper {
-    padding: 82px 262px 82px 42px;
+    padding: 82px 272px 82px 42px;
 }
 
 .banner-vegetables__title {
+    font-family: "Yellowtail", Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 27px;
     color: #7eb693;
 }
 
 .banner-vegetables__desc {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-weight: 800;
     font-size: 30px;
     color: #274c5b;
@@ -262,14 +285,27 @@ body {
     margin-left: -50px;
 }
 
+.text-side h1 {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 37px;
+  color: #274c5b;
+}
+
 .about {
+    font-family: "Yellowtail", Arial, Helvetica, sans-serif;
     color: #7EB693;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 37px;
 }
 
 .description {
     margin: 20px 0;
+    font-weight: 400;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 165%;
+    color: #525c60;
 }
 
 .features {
@@ -288,16 +324,27 @@ body {
   height: 75px;
 }
 
+.text-block {
+  margin: 33px 0 2px 14px;
+}
+
 .text-block h3 {
   margin: 0 0 4px 0; 
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 800;
   font-size: 18px;
+  color: #274c5b;
 }
 
 .text-block p {
   margin: 0;
   color: #666;
-  font-size: 14px;
   margin-bottom: 35px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 165%;
+  color: #525c60;
 }
 /* ABOUT */
 
@@ -665,6 +712,147 @@ body {
 /* --------------------------- */
 
 
+/* GALLERY */
+
+/* GALLERY */
+
+
+/* --------------------------- */
+
+
+/* NEWS */
+.news {
+  padding: 133px 0 137px 0;
+}
+
+.news__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.news__top__heading {
+  max-width: 600px;
+}
+
+.news__top__title {
+  font-weight: 400;
+  font-size: 27px;
+  color: #7eb693;
+}
+
+.news__top__subtitle {
+  font-weight: 800;
+  font-size: 37px;
+  color: #274c5b;
+}
+
+.news__top__btn {
+  position: relative;
+  border: 1.50px solid #274c5b;
+  border-radius: 12px;
+  width: 165px;
+  height: 60px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 15px;
+  color: #274c5b;
+  padding-left: 33px;
+  transition: .3s;
+}
+.news__top__btn::after {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-image: url("../images/arrow-btn.svg");
+  background-size: cover;
+  margin-left: 7px;
+}
+.news__top__btn:hover {
+  color: #fff;
+  background-color: #274c5b;
+}
+.news__top__btn:active {
+  color: #274c5b;
+  background-color: #fff;
+  border: 1.50px solid #274c5b;
+}
+
+.news__bottom {
+  margin-top: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom__left__img {
+  background: url("../images/news-background-one.jpg") #c4c4c4 no-repeat center/cover;
+  border-radius: 22px;
+  width: 507px;
+  height: 393px;
+  padding: 32px 422px 299px 24px;
+}
+
+.bottom__right__img {
+  background: url("../images/news-background-two.jpg") #c4c4c4 no-repeat center/cover;
+  border-radius: 22px;
+  width: 507px;
+  height: 393px;
+  padding: 32px 422px 299px 24px;
+}
+
+.bottom__left__desc {
+  position: relative;
+  bottom: 196px;
+  left: 24px;
+  border-radius: 24px;
+  padding: 34px 42px 45px 42px;
+  width: 459px;
+  height: 248px;
+  box-shadow: 0 15px 26px 0 rgba(167, 167, 167, 0.25);
+  background: #fff;
+}
+
+.bottom__left__admin {
+  position: relative;
+  display: inline-flex;
+  font-weight: 400;
+  font-size: 14px;
+  color: #274c5b;
+}
+
+.bottom__left__admin::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../images/news-admin.svg");
+  width: 15px;
+  height: 16px;
+  background-size: cover;
+  margin-top: 2px;
+  margin-right: 6px;
+}
+
+.bottom__left__title {
+  font-weight: 800;
+  font-size: 18px;
+  color: #274c5b;
+}
+
+.bottom__left__subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 165%;
+  color: #525c60;
+}
+/* NEWS */
+
+
+/* --------------------------- */
+
+
 /* NEWSLETTER */
 .newsletter {
     background: url('./img/image_8.png') center/cover no-repeat;
@@ -674,6 +862,7 @@ body {
     padding: 79px 53px;
     text-align: left;
     color: white;
+    margin-top: -137px;
 }
 
 .newsletter-content {
@@ -696,7 +885,7 @@ body {
 
 .newsletter-form input {
     border: none;
-    border-radius: 5px;
+    border-radius: 12px;
     width: 261px;
     height: 60px;
     font-size: 16px;
@@ -716,8 +905,14 @@ body {
     font-weight: bold;
 }
 
+.newsletter-form button:hover {
+  background-color: #1D3742;
+}
 
 /* NEWSLETTER */
+
+
+/* --------------------------- */
 
 
 /* FOOTER */
@@ -725,8 +920,7 @@ body {
     max-width: 1440px;
     margin: 0 auto;
     padding: 60px 80px;
-    background-color: #f9f8f8;
-    color: #274c5b;
+    background-color: #fff;
 }
 
 .footer-contact,
@@ -792,10 +986,7 @@ body {
     flex: 1;
     padding: 0 40px; 
     text-align: center;
-    position: relative;*/
-    /* display: flex; */
-    flex-direction: column;
-    align-items: center;
+    position: relative;
 }
 
 .footer-center::after {
