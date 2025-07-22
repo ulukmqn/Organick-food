@@ -31,7 +31,7 @@
                     <input class="search" type="search" id="search" placeholder="Поиск...">
                     <label for="search"><img src="/src/assets/images/search-icon.svg" alt="Search"></label>
                 </div>
-                <p class="header__cart">Cart (0)</p>
+                <a href="#"><p class="header__cart">Cart (0)</p></a>
             </div>
         </div>
     </header>
@@ -259,8 +259,64 @@
             </div>
         </section>
 
-        <section class="newsletter"></section>
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Subscribe to our Newsletter</h2>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
     </main>
-    <footer id="footer" class="footer"></footer>
+    <footer id="footer" class="footer">
+         <div class="footer-columns">
+            <!-- Контакты -->
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <div class="contact-item">
+                    <strong>Email:</strong>
+                    <p>needhelp@Organia.com</p>
+                </div>
+                <div class="contact-item">
+                    <strong>Phone:</strong>
+                    <p>666 888 888</p>
+                </div>
+                <div class="contact-item">
+                    <strong>Address:</strong>
+                    <p>88 road, borklyn street, USA</p>
+                </div>
+            </div>
+
+            <!-- Центральная колонка -->
+            <div class="footer-center">
+                <a href="#"><img src="../src/assets/images/logo-organick.svg" alt="Organick Logo" class="footer-logo"></a>
+                <p>Simply dummy text of the printing and typesetting industry.<br>Lorem Ipsum simply dummy text of the printing</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com" target="_blank"><img src="../src/assets/images/instagram-logo.svg" alt="Instagram"></a>
+                    <a href="https://facebook.com" target="_blank"><img src="../src/assets/images/facebook-logo.svg" alt="Facebook"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="../src/assets/images/twitter-logo.svg" alt="Twitter"></a>
+                    <a href="https://pinterest.com" target="_blank"><img src="../src/assets/images/pinterest-logo.svg" alt="Pinterest"></a>
+                </div>
+            </div>
+
+            <!-- Полезные страницы -->
+            <div class="footer-pages">
+                <h3>Utility Pages</h3>
+                <ul>
+                    <li><a href="#">Style Guide</a></li>
+                    <li><a href="#">404 Not Found</a></li>
+                    <li><a href="#">Password Protected</a></li>
+                    <li><a href="#">Licences</a></li>
+                    <li><a href="#">Changelog</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Копирайт -->
+        <div class="copyright">
+            <p>Copyright © <strong>Organick</strong> | Designed by <strong>VictorFlow</strong> Templates - Powered by <strong>Webflow</strong></p>
+        </div>
+    </footer>
 </body>
 </html>
