@@ -1,8 +1,13 @@
 @import url("./fonts.css");
 @import url("./resset.css");
 
-body {
-    /* font-family: Arial, Helvetica, sans-serif; */
+.lock {
+  overflow: hidden;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 html {
@@ -82,6 +87,8 @@ html {
   background-color: #274c5b;
   color: #fff;
 }
+
+
 /* HEDAER */
 .header {
     padding: 31px 0;
@@ -130,7 +137,6 @@ html {
 
 .header__search {
     display: flex;
-    /* justify-content: center; */
     border-radius: 27px;
     padding: 0 15px;
     width: 281px;
@@ -157,10 +163,8 @@ html {
     font-weight: 600;
     font-size: 14px;
     color: #274c5b;
-    border: 0.75px solid #e0e0e0;
+    border: 1px solid #dedede;
     border-radius: 25px;
-    /* width: 119px;
-    height: 49px; */
     padding: 4px 17px 4px 4px;
 }
 
@@ -169,12 +173,16 @@ html {
     display: inline-block;
     width: 43px;
     height: 43px;
-    background-image: url("/src/assets/images/cart-icon.svg");
+    background-image: url("../images/cart-icon.svg");
     background-size: cover;
     margin-right: 9px;
     vertical-align: middle;
 }
 /* HEDAER */
+
+.burger__socials {
+    display: none;
+}
 
 
 /* --------------------------- */
@@ -315,10 +323,6 @@ html {
     font-size: 13px;
     line-height: 165%;
     color: #525c60;
-}
-
-.features {
-    /* margin: 20px 0; */
 }
 
 .feature {
@@ -817,8 +821,7 @@ padding-bottom: 15px;
 }
 
 .star{
-  text-align: end;
-  padding-left: 60px;  
+  padding-left: 60px;
 }
 
 
@@ -1190,7 +1193,6 @@ padding-bottom: 15px;
     text-align: right;
 }
 
-/* Контакты */
 .footer-contact {
     flex: 1;
     padding-right: 40px;
@@ -1338,10 +1340,11 @@ padding-bottom: 15px;
 /* COPYRIGHT */
 .copyright {
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
-    padding: 12px 457px;
+    padding: 12px 20px;
     border-top: 1px solid #E0E0E0;
     font-size: 13px;
     color: #525C60;
+    text-align: center;
 }
 
 .copyright strong {
