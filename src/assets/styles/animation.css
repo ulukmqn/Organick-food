@@ -1,13 +1,11 @@
-@keyframes appear {
+/* @keyframes appear {
   from {
     opacity: 0;
     scale: 0.5;
-    /* transform: translateX(0px); */
   }
   to {
     opacity: 1;
     scale: 1;
-    /* transform: translateX(0px); */
   }
 }
 
@@ -15,4 +13,25 @@
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
+} */
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.scroll__animation {
+  opacity: 0;
+  transform: scale(0.5);
+  transition: 0.3s ease;
+}
+
+.scroll__animation.visible {
+  animation: appear 0.6s ease forwards;
 }
